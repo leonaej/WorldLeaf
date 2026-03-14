@@ -90,7 +90,7 @@ The strong single-hop performance but sharp multi-hop degradation confirms the c
 ---
 
 ## QA Dataset
-- The dataset is available <a href="https://drive.google.com/drive/folders/17X2n96Rr8LDyVdhGqN1Vz80HRhRMbsL7?usp=sharing" target="_blank">here</a>.
+
 - The dataset is available [here](https://drive.google.com/drive/folders/17X2n96Rr8LDyVdhGqN1Vz80HRhRMbsL7?usp=sharing).
 - 2,276 single-hop QA pairs generated from all edges using typed templates (forward and backward directions)
 - 8,405 multi-hop QA pairs generated from all valid 2-hop and 3-hop chains
