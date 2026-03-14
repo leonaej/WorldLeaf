@@ -60,11 +60,11 @@ WORLDLEAF/
 ├── Evaluation/
 │   └── evaluate_rag.py          # LLM-judged Hit@3 evaluation with failure mode breakdown
 ├── data/
-│   ├── raw/                     # Raw edge and species files
+│   ├── raw/                     # Raw edge and species files, not commited to git
 │   └── processed/               # Final graph files and visualization
 ├── notebooks/
 │   └── 01_explore_graph.ipynb   # Graph exploration notebook
-├── m.py                         # Ad-hoc scripting (taxonomy enrichment)
+├── misc/                        # Ad-hoc scripting folder (taxonomy enrichment)
 ├── visualize_graph.py           # Graph visualization
 └── requirements.txt
 ```
