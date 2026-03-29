@@ -104,10 +104,3 @@ if __name__ == "__main__":
     generate()
 
 
-
-# fix 1 - meta structure
-qid_to_idx = {qid: i for i, qid in enumerate(meta['node_order'])}
-
-# fix 2 - column names
-h = row['subject_id']
-t = row['object_id']
