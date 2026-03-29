@@ -16,13 +16,16 @@ checkpoints/
 understanding_the_flow/
 
 
-Baseline/node_edge_embeddings_meta.json
-Baseline/node_edge_embeddings.npy
-Baseline/node_edge_texts.json
-Baseline/node_embeddings_meta.json
-Baseline/node_embeddings.npy
-Baseline/node_texts.json
+baseline/node_edge_embeddings_meta.json
+baseline/node_edge_embeddings.npy
+baseline/node_edge_texts.json
+baseline/node_embeddings_meta.json
+baseline/node_embeddings.npy
+baseline/node_texts.json
 
+
+proposed_solution/edge_embeddings/edge_embeddings.json
+proposed_solution/edge_embeddings/trained_model.pt
 
 QA/multi_hop_qa.json
 QA/single_hop_qa.json
