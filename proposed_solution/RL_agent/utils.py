@@ -6,8 +6,8 @@ import pandas as pd
 NODES_PATH     = "data/processed/nodes.csv"
 EDGES_PATH     = "data/processed/edges.csv"
 
-NODE_EMB_NPY   = "Baseline/node_embeddings.npy"
-NODE_EMB_META  = "Baseline/node_embeddings_meta.json"
+NODE_EMB_NPY   = "baseline/node_embeddings.npy"
+NODE_EMB_META  = "baseline/node_embeddings_meta.json"
 
 EDGE_EMB_NPY   = "proposed_solution/edge_embeddings2/edge_embeddings.npy"
 EDGE_EMB_META  = "proposed_solution/edge_embeddings2/edge_embeddings_meta.json"

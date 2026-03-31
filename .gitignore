@@ -40,7 +40,13 @@ proposed_solution/edge_embeddings2/edge_embeddings_meta.json
 proposed_solution/edge_embeddings2/edge_embeddings.npy
 proposed_solution/RL_agent/query_embeddings_meta.json
 proposed_solution/RL_agent/query_embeddings.npy
-
+proposed_solution/RL_agent/checkpoints/best_model.pt
+proposed_solution/RL_agent/checkpoints/checkpoint_epoch*.pt
+proposed_solution/RL_agent/training_log.json
+proposed_solution/RL_agent/test_data.json
+proposed_solution/RL_agent/eval_results.json
+proposed_solution/RL_agent/eval_llm_results.json
+proposed_solution/RL_agent/eval_llm_checkpoint.json
 
 Evaluation/results/
 
