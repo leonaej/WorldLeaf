@@ -30,6 +30,17 @@ proposed_solution/edge_embeddings/trained_model.pt
 QA/multi_hop_qa.json
 QA/single_hop_qa.json
 QA/multi_hop_chains.json
+QA/multi_hop_qa_fixed.json
+QA/single_hop_qa_fixed.json
+
+
+proposed_solution/edge_embeddings/edge_embeddings.json
+proposed_solution/edge_embeddings/trained_model.pt
+proposed_solution/edge_embeddings2/edge_embeddings_meta.json
+proposed_solution/edge_embeddings2/edge_embeddings.npy
+proposed_solution/RL_agent/query_embeddings_meta.json
+proposed_solution/RL_agent/query_embeddings.npy
+
 
 Evaluation/results/
 
