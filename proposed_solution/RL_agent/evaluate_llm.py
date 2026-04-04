@@ -148,18 +148,24 @@ def evaluate_llm(debug=False):
     edge_matrix, edge_to_idx, _            = load_edge_embeddings()
     query_matrix, query_lookup             = load_query_embeddings()
 
+
+
+
     # load node texts
-    with open(NODE_TEXTS_PATH, 'r') as f:
+    with open(NODE_TEXTS_PATH, 'r', encoding='utf-8') as f:
         node_texts = json.load(f)
     print(f"Node texts loaded: {len(node_texts)} entries")
 
-    with open(EDGE_TEXTS_PATH, 'r') as f:
+    with open(EDGE_TEXTS_PATH, 'r', encoding='utf-8') as f:
         edge_texts = json.load(f)
     print(f"Edge texts loaded: {len(edge_texts)} entries")
 
     # load test data
-    with open(TEST_DATA_PATH, 'r') as f:
+    with open(TEST_DATA_PATH, 'r', encoding='utf-8') as f:
         test_data = json.load(f)
+
+
+
 
     if debug:
         test_data = test_data[:10]
@@ -279,16 +285,17 @@ def evaluate_llm(debug=False):
     multi_hits  = sum(1 for r in multi  if r['hit'])
 
     overall_hit1    = hits / total            if total        > 0 else 0
-    single_hop_hit1 = single_hits / len(single) if single     > 0 else 0
-    multi_hop_hit1  = multi_hits  / len(multi)  if multi      > 0 else 0
+
+    single_hop_hit1 = single_hits / len(single) if len(single) > 0 else 0
+    multi_hop_hit1  = multi_hits  / len(multi)  if len(multi)  > 0 else 0
 
     # ── print results ──────────────────────────────────────────────────────
     print(f"\n── RL Agent LLM Evaluation Results ─────────────────────────")
     print(f"Total questions:          {total}")
-    print(f"✅ HIT:                   {hits}  ({overall_hit1:.1%})")
-    print(f"❌ TYPE1 (traversal miss): {type1}  ({type1/total:.1%})")
-    print(f"⚠️  TYPE2 (data gap):      {type2}  ({type2/total:.1%})")
-    print(f"🔴 TYPE3 (wrong info):     {type3}  ({type3/total:.1%})")
+    print(f"HIT:                   {hits}  ({overall_hit1:.1%})")
+    print(f"TYPE1 (traversal miss): {type1}  ({type1/total:.1%})")
+    print(f"TYPE2 (data gap):      {type2}  ({type2/total:.1%})")
+    print(f"TYPE3 (wrong info):     {type3}  ({type3/total:.1%})")
     print(f"\n── By Hop Type ──────────────────────────────────────────────")
     print(f"Single-hop Hit@1:         {single_hop_hit1:.4f}  "
           f"({single_hits}/{len(single)})")

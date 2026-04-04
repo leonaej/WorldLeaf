@@ -1,0 +1,6724 @@
+[
+  {
+    "question": "What is the parent taxon of Crambini?",
+    "hop_type": "single",
+    "answer_nodes": [
+      "Crambinae"
+    ],
+    "start_nodes": [
+      "Crambinae",
+      "Crambidae",
+      "Crameria amabilis"
+    ],
+    "paths": [
+      {
+        "final_node": "Q149407",
+        "final_name": "Crambinae",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q149407",
+            "name": "Crambinae",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q132980",
+        "final_name": "Crambidae",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q132980",
+            "name": "Crambidae",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q13494604",
+        "final_name": "Crameria amabilis",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q13494604",
+            "name": "Crameria amabilis",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q13494604",
+            "name": "Crameria amabilis",
+            "action": "STOP",
+            "relation": null,
+            "prob": 1.5866786995388793e-08
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q5181847",
+        "final_name": "Crameria",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q13494604",
+            "name": "Crameria amabilis",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q5181847",
+            "name": "Crameria",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 1.0
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      }
+    ],
+    "gpt_response": "TYPE2",
+    "result": "TYPE2",
+    "hit": false
+  },
+  {
+    "question": "What is the parent taxon of Corythornis cristatus?",
+    "hop_type": "single",
+    "answer_nodes": [
+      "Corythornis"
+    ],
+    "start_nodes": [
+      "Corythornis",
+      "Chrysococcyx",
+      "Coracias"
+    ],
+    "paths": [
+      {
+        "final_node": "Q2399191",
+        "final_name": "Corythornis",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q2399191",
+            "name": "Corythornis",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q867087",
+        "final_name": "Chrysococcyx",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q867087",
+            "name": "Chrysococcyx",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q44617",
+        "final_name": "Coracias",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q44617",
+            "name": "Coracias",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      }
+    ],
+    "gpt_response": "Corythornis",
+    "result": "HIT",
+    "hit": true
+  },
+  {
+    "question": "What does Ciconia nigra prey on?",
+    "hop_type": "single",
+    "answer_nodes": [
+      "Charadrius hiaticula",
+      "Actitis hypoleucos",
+      "Glareola pratincola",
+      "Tringa stagnatilis",
+      "Tringa erythropus",
+      "Tringa glareola",
+      "Calidris temminckii",
+      "Gallinago gallinago",
+      "Motacilla flava",
+      "Tringa nebularia",
+      "Cisticola juncidis",
+      "Calidris minuta",
+      "Tringa ochropus"
+    ],
+    "start_nodes": [
+      "Ciconia",
+      "Black Kite",
+      "Grey Heron"
+    ],
+    "paths": [
+      {
+        "final_node": "Q6471715",
+        "final_name": "Ciconia",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q6471715",
+            "name": "Ciconia",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25984",
+        "final_name": "Western Yellow Wagtail",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q80362",
+            "name": "Black Kite",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25984",
+            "name": "Western Yellow Wagtail",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.6011539697647095
+          },
+          {
+            "node": "Q25984",
+            "name": "Western Yellow Wagtail",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9338383078575134
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q210791",
+        "final_name": "Zitting Cisticola",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q80362",
+            "name": "Black Kite",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q210791",
+            "name": "Zitting Cisticola",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.18104073405265808
+          },
+          {
+            "node": "Q210791",
+            "name": "Zitting Cisticola",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9999980926513672
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q170718",
+        "final_name": "European Bee-eater",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q80362",
+            "name": "Black Kite",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q170718",
+            "name": "European Bee-eater",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.1513647586107254
+          },
+          {
+            "node": "Q170718",
+            "name": "European Bee-eater",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.32150188088417053
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q929463",
+        "final_name": "Pea Blue",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q80362",
+            "name": "Black Kite",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25984",
+            "name": "Western Yellow Wagtail",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.6011539697647095
+          },
+          {
+            "node": "Q929463",
+            "name": "Pea Blue",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.06616157293319702
+          },
+          {
+            "node": "Q929463",
+            "name": "Pea Blue",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9999982118606567
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q230042",
+        "final_name": "Motacilla",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q80362",
+            "name": "Black Kite",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25984",
+            "name": "Western Yellow Wagtail",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.6011539697647095
+          },
+          {
+            "node": "Q230042",
+            "name": "Motacilla",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 5.100107713928992e-08
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q2719515",
+        "final_name": "Cisticola",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q80362",
+            "name": "Black Kite",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q210791",
+            "name": "Zitting Cisticola",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.18104073405265808
+          },
+          {
+            "node": "Q2719515",
+            "name": "Cisticola",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 1.96503174265672e-06
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q11946202",
+        "final_name": "butterfly",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q80362",
+            "name": "Black Kite",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q170718",
+            "name": "European Bee-eater",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.1513647586107254
+          },
+          {
+            "node": "Q11946202",
+            "name": "butterfly",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.27736586332321167
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q1409595",
+        "final_name": "Broad Scarlet",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q80362",
+            "name": "Black Kite",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q170718",
+            "name": "European Bee-eater",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.1513647586107254
+          },
+          {
+            "node": "Q1409595",
+            "name": "Broad Scarlet",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.2085433155298233
+          },
+          {
+            "node": "Q1409595",
+            "name": "Broad Scarlet",
+            "action": "STOP",
+            "relation": null,
+            "prob": 1.0
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q3010980",
+        "final_name": "Lampides",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q80362",
+            "name": "Black Kite",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25984",
+            "name": "Western Yellow Wagtail",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.6011539697647095
+          },
+          {
+            "node": "Q929463",
+            "name": "Pea Blue",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.06616157293319702
+          },
+          {
+            "node": "Q3010980",
+            "name": "Lampides",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 1.7298217471761745e-06
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q137359",
+        "final_name": "Crocothemis",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q80362",
+            "name": "Black Kite",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q170718",
+            "name": "European Bee-eater",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.1513647586107254
+          },
+          {
+            "node": "Q1409595",
+            "name": "Broad Scarlet",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.2085433155298233
+          },
+          {
+            "node": "Q137359",
+            "name": "Crocothemis",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 1.3086860484179397e-08
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25273",
+        "final_name": "Grey Heron",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9592539668083191
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q387344",
+        "final_name": "Sharptooth Catfish",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.04072824493050575
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9999922513961792
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25273",
+        "final_name": "Grey Heron",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 1.7723710698192008e-05
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9592539668083191
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q387344",
+        "final_name": "Sharptooth Catfish",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.04072824493050575
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 6.904974270582898e-06
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9999922513961792
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q736329",
+        "final_name": "Clarias",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.04072824493050575
+          },
+          {
+            "node": "Q736329",
+            "name": "Clarias",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 8.854885322762129e-07
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q387344",
+        "final_name": "Sharptooth Catfish",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 1.7723710698192008e-05
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.04072824493050575
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9999922513961792
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25273",
+        "final_name": "Grey Heron",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 1.7723710698192008e-05
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 1.7723710698192008e-05
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9592539668083191
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q387344",
+        "final_name": "Sharptooth Catfish",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.04072824493050575
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 6.904974270582898e-06
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 6.904974270582898e-06
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q736329",
+        "final_name": "Clarias",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.04072824493050575
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 6.904974270582898e-06
+          },
+          {
+            "node": "Q736329",
+            "name": "Clarias",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 8.854885322762129e-07
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q387344",
+        "final_name": "Sharptooth Catfish",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 1.7723710698192008e-05
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.04072824493050575
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 6.904974270582898e-06
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q736329",
+        "final_name": "Clarias",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 1.7723710698192008e-05
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.04072824493050575
+          },
+          {
+            "node": "Q736329",
+            "name": "Clarias",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 8.854885322762129e-07
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q387344",
+        "final_name": "Sharptooth Catfish",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 1.7723710698192008e-05
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 1.7723710698192008e-05
+          },
+          {
+            "node": "Q387344",
+            "name": "Sharptooth Catfish",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.04072824493050575
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25273",
+        "final_name": "Grey Heron",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 1.7723710698192008e-05
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 1.7723710698192008e-05
+          },
+          {
+            "node": "Q25273",
+            "name": "Grey Heron",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 1.7723710698192008e-05
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      }
+    ],
+    "gpt_response": "TYPE2",
+    "result": "TYPE2",
+    "hit": false
+  },
+  {
+    "question": "What is the parent taxon of Tropical house gecko?",
+    "hop_type": "single",
+    "answer_nodes": [
+      "Hemidactylus"
+    ],
+    "start_nodes": [
+      "Tropical House Gecko",
+      "gecko",
+      "Hemidactylus"
+    ],
+    "paths": [
+      {
+        "final_node": "Q2703241",
+        "final_name": "Tropical House Gecko",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q2703241",
+            "name": "Tropical House Gecko",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q2703241",
+            "name": "Tropical House Gecko",
+            "action": "STOP",
+            "relation": null,
+            "prob": 1.3303004531284301e-10
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q747278",
+        "final_name": "Hemidactylus",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q2703241",
+            "name": "Tropical House Gecko",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q747278",
+            "name": "Hemidactylus",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 1.0
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q15872",
+        "final_name": "gecko",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q15872",
+            "name": "gecko",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q747278",
+        "final_name": "Hemidactylus",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q747278",
+            "name": "Hemidactylus",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      }
+    ],
+    "gpt_response": "Hemidactylus",
+    "result": "HIT",
+    "hit": true
+  },
+  {
+    "question": "What is the parent taxon of African Cuckoo?",
+    "hop_type": "single",
+    "answer_nodes": [
+      "Cuculus"
+    ],
+    "start_nodes": [
+      "African Cuckoo",
+      "Cuculus",
+      "Chrysococcyx"
+    ],
+    "paths": [
+      {
+        "final_node": "Q1272649",
+        "final_name": "African Cuckoo",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q1272649",
+            "name": "African Cuckoo",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q1272649",
+            "name": "African Cuckoo",
+            "action": "STOP",
+            "relation": null,
+            "prob": 8.423362918633104e-13
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q746658",
+        "final_name": "Cuculus",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q1272649",
+            "name": "African Cuckoo",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q746658",
+            "name": "Cuculus",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 1.0
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q746658",
+        "final_name": "Cuculus",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q746658",
+            "name": "Cuculus",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q867087",
+        "final_name": "Chrysococcyx",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q867087",
+            "name": "Chrysococcyx",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      }
+    ],
+    "gpt_response": "Cuculus",
+    "result": "HIT",
+    "hit": true
+  },
+  {
+    "question": "What do the animals that leopards scavenge from eat?",
+    "hop_type": "multi",
+    "answer_nodes": [
+      "ungulate"
+    ],
+    "start_nodes": [
+      "Leopard",
+      "carrion",
+      "Verreaux's Eagle"
+    ],
+    "paths": [
+      {
+        "final_node": "Q643352",
+        "final_name": "grass",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8341655135154724
+          },
+          {
+            "node": "Q643352",
+            "name": "grass",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.37499943375587463
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q132576",
+        "final_name": "Impala",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8341655135154724
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.14402711391448975
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478928089141846
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8341655135154724
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.14402711391448975
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "symbiotic_with",
+            "prob": 0.20226825773715973
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8341655135154724
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.14402711391448975
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19894911348819733
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8341655135154724
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.14017824828624725
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20762735605239868
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8341655135154724
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.14017824828624725
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20236007869243622
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8341655135154724
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.14017824828624725
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19989176094532013
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q132576",
+        "final_name": "Impala",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.13586057722568512
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "symbiotic_with",
+            "prob": 0.20063790678977966
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478928089141846
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.13586057722568512
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "symbiotic_with",
+            "prob": 0.20063790678977966
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "symbiotic_with",
+            "prob": 0.20226825773715973
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.13586057722568512
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "symbiotic_with",
+            "prob": 0.20063790678977966
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19894911348819733
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.13586057722568512
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19689567387104034
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2566528916358948
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.13586057722568512
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19689567387104034
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21192783117294312
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.13586057722568512
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19689567387104034
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20769888162612915
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q643352",
+        "final_name": "grass",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.13586057722568512
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19047613441944122
+          },
+          {
+            "node": "Q643352",
+            "name": "grass",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.37499943375587463
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.13586057722568512
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19047613441944122
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.14402711391448975
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.13586057722568512
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19047613441944122
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.14017824828624725
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q643352",
+        "final_name": "grass",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q140",
+            "name": "Lion",
+            "action": "FOLLOW",
+            "relation": "scavenges_from",
+            "prob": 0.013831661082804203
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.6891362071037292
+          },
+          {
+            "node": "Q643352",
+            "name": "grass",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.37499943375587463
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q140",
+            "name": "Lion",
+            "action": "FOLLOW",
+            "relation": "scavenges_from",
+            "prob": 0.013831661082804203
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.6891362071037292
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.14402711391448975
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q140",
+            "name": "Lion",
+            "action": "FOLLOW",
+            "relation": "scavenges_from",
+            "prob": 0.013831661082804203
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.6891362071037292
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.14017824828624725
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q140",
+            "name": "Lion",
+            "action": "FOLLOW",
+            "relation": "scavenges_from",
+            "prob": 0.013831661082804203
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.26710283756256104
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "symbiotic_with",
+            "prob": 0.20063790678977966
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q132576",
+        "final_name": "Impala",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q140",
+            "name": "Lion",
+            "action": "FOLLOW",
+            "relation": "scavenges_from",
+            "prob": 0.013831661082804203
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.26710283756256104
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19689567387104034
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q140",
+            "name": "Lion",
+            "action": "FOLLOW",
+            "relation": "scavenges_from",
+            "prob": 0.013831661082804203
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.26710283756256104
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19047613441944122
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q140",
+            "name": "Lion",
+            "action": "FOLLOW",
+            "relation": "scavenges_from",
+            "prob": 0.013831661082804203
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.02353452332317829
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24274834990501404
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q140",
+            "name": "Lion",
+            "action": "FOLLOW",
+            "relation": "scavenges_from",
+            "prob": 0.013831661082804203
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.02353452332317829
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2361229658126831
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q34706",
+            "name": "Leopard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q140",
+            "name": "Lion",
+            "action": "FOLLOW",
+            "relation": "scavenges_from",
+            "prob": 0.013831661082804203
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.02353452332317829
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23291750252246857
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q202994",
+        "final_name": "carrion",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q202994",
+            "name": "carrion",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q747827",
+        "final_name": "Verreaux's Eagle",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q747827",
+            "name": "Verreaux's Eagle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q747827",
+            "name": "Verreaux's Eagle",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.4633646011352539
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q513224",
+        "final_name": "Spotted Eagle-Owl",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q747827",
+            "name": "Verreaux's Eagle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q513224",
+            "name": "Spotted Eagle-Owl",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.5366354584693909
+          },
+          {
+            "node": "Q513224",
+            "name": "Spotted Eagle-Owl",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.999988317489624
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q30085",
+        "final_name": "Aquila",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q747827",
+            "name": "Verreaux's Eagle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q30085",
+            "name": "Aquila",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 4.4448741909342004e-10
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q214293",
+        "final_name": "Bubo",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q747827",
+            "name": "Verreaux's Eagle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q513224",
+            "name": "Spotted Eagle-Owl",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.5366354584693909
+          },
+          {
+            "node": "Q214293",
+            "name": "Bubo",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 1.1689724487951025e-05
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      }
+    ],
+    "gpt_response": "TYPE2",
+    "result": "TYPE2",
+    "hit": false
+  },
+  {
+    "question": "What is the parent taxon of the animals that African wild dogs prey on?",
+    "hop_type": "multi",
+    "answer_nodes": [
+      "Equus",
+      "Aepyceros",
+      "wildebeest",
+      "Eudorcas",
+      "Tragelaphus",
+      "Nanger"
+    ],
+    "start_nodes": [
+      "Lycaon",
+      "African Wild Dog",
+      "jackal"
+    ],
+    "paths": [
+      {
+        "final_node": "Q12061410",
+        "final_name": "Lycaon",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q12061410",
+            "name": "Lycaon",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q311375",
+        "final_name": "Tragelaphus",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.4761042892932892
+          },
+          {
+            "node": "Q311375",
+            "name": "Tragelaphus",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.8768031597137451
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q2567514",
+        "final_name": "Nanger",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.2803065776824951
+          },
+          {
+            "node": "Q2567514",
+            "name": "Nanger",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.9045153260231018
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q7609",
+        "final_name": "wildebeest",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.23655082285404205
+          },
+          {
+            "node": "Q7609",
+            "name": "wildebeest",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.9586337208747864
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q27022",
+        "final_name": "Equus",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.4761042892932892
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.06995625793933868
+          },
+          {
+            "node": "Q27022",
+            "name": "Equus",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.9430782198905945
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.4761042892932892
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.06995625793933868
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.029556913301348686
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.4761042892932892
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.06995625793933868
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.02434363029897213
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q2567514",
+        "final_name": "Nanger",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.4761042892932892
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.024990960955619812
+          },
+          {
+            "node": "Q2567514",
+            "name": "Nanger",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.9045153260231018
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.4761042892932892
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.024990960955619812
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.03866690397262573
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.4761042892932892
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.024990960955619812
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.03831712156534195
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q311375",
+        "final_name": "Tragelaphus",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.2803065776824951
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.03866690397262573
+          },
+          {
+            "node": "Q311375",
+            "name": "Tragelaphus",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.8768031597137451
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.2803065776824951
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.03866690397262573
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.06995625793933868
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.2803065776824951
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.03866690397262573
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.024990960955619812
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q27022",
+        "final_name": "Equus",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.2803065776824951
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.03831712156534195
+          },
+          {
+            "node": "Q27022",
+            "name": "Equus",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.9430782198905945
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.2803065776824951
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.03831712156534195
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.029556913301348686
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.2803065776824951
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.03831712156534195
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.02434363029897213
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q2567514",
+        "final_name": "Nanger",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.23655082285404205
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.02213803119957447
+          },
+          {
+            "node": "Q2567514",
+            "name": "Nanger",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.9045153260231018
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.23655082285404205
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.02213803119957447
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.03866690397262573
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.23655082285404205
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.02213803119957447
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.03831712156534195
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q311375",
+        "final_name": "Tragelaphus",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.23655082285404205
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.015521662309765816
+          },
+          {
+            "node": "Q311375",
+            "name": "Tragelaphus",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.8768031597137451
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.23655082285404205
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.015521662309765816
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.06995625793933868
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q173651",
+            "name": "African Wild Dog",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.23655082285404205
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.015521662309765816
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.024990960955619812
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q125525",
+        "final_name": "jackal",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q125525",
+            "name": "jackal",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      }
+    ],
+    "gpt_response": "TYPE2",
+    "result": "TYPE2",
+    "hit": false
+  },
+  {
+    "question": "What do the animals that cheetahs prey on migrate with?",
+    "hop_type": "multi",
+    "answer_nodes": [
+      "Grant's Gazelle",
+      "Impala",
+      "Thomson's Gazelle",
+      "Common Eland"
+    ],
+    "start_nodes": [
+      "Cheetah",
+      "Grant's Gazelle",
+      "wildebeest"
+    ],
+    "paths": [
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8077355027198792
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2470109909772873
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23336727917194366
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8077355027198792
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2470109909772873
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23235513269901276
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q132576",
+        "final_name": "Impala",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8077355027198792
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2470109909772873
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22930103540420532
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q132576",
+        "final_name": "Impala",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8077355027198792
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24468715488910675
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23767772316932678
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8077355027198792
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24468715488910675
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23618505895137787
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8077355027198792
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24468715488910675
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23426255583763123
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8077355027198792
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24435703456401825
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575625240802765
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8077355027198792
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24435703456401825
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575243771076202
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.8077355027198792
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24435703456401825
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21166181564331055
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.17685724794864655
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23767772316932678
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.37887445092201233
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.17685724794864655
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23767772316932678
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20965109765529633
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.17685724794864655
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23767772316932678
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.17132094502449036
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.17685724794864655
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23618505895137787
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2470109909772873
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.17685724794864655
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23618505895137787
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24468715488910675
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.17685724794864655
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23618505895137787
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24435703456401825
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.17685724794864655
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23426255583763123
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575625240802765
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.17685724794864655
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23426255583763123
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575243771076202
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.17685724794864655
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23426255583763123
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21166181564331055
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.015188359655439854
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23336727917194366
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.015188359655439854
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23235513269901276
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q132576",
+        "final_name": "Impala",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.015188359655439854
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22930103540420532
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.015188359655439854
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575625240802765
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.015188359655439854
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575243771076202
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.015188359655439854
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21166181564331055
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q132576",
+        "final_name": "Impala",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.015188359655439854
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23767772316932678
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.015188359655439854
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23618505895137787
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q23907",
+            "name": "Cheetah",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.015188359655439854
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23426255583763123
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23336727917194366
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2470109909772873
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23336727917194366
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24468715488910675
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23336727917194366
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24435703456401825
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23235513269901276
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575625240802765
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23235513269901276
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575243771076202
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23235513269901276
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21166181564331055
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22930103540420532
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.37887445092201233
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22930103540420532
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20965109765529633
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22408036887645721
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22930103540420532
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.17132094502449036
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575625240802765
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23336727917194366
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575625240802765
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23235513269901276
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q132576",
+        "final_name": "Impala",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575625240802765
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.22930103540420532
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575243771076202
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2470109909772873
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575243771076202
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24468715488910675
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575243771076202
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24435703456401825
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q132576",
+        "final_name": "Impala",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21166181564331055
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23767772316932678
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21166181564331055
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23618505895137787
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2210477590560913
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21166181564331055
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23426255583763123
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23767772316932678
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.37887445092201233
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23767772316932678
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20965109765529633
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q132576",
+            "name": "Impala",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23767772316932678
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.17132094502449036
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23618505895137787
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2470109909772873
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23618505895137787
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24468715488910675
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23618505895137787
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.24435703456401825
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23426255583763123
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575625240802765
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23426255583763123
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21575243771076202
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21793745458126068
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.23426255583763123
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.21166181564331055
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q7609",
+        "final_name": "wildebeest",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q7609",
+            "name": "wildebeest",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      }
+    ],
+    "gpt_response": "Impala",
+    "result": "HIT",
+    "hit": true
+  },
+  {
+    "question": "What do the animals that caracals prey on migrate with that eat grass?",
+    "hop_type": "multi",
+    "answer_nodes": [
+      "grass",
+      "Eragrostis superba",
+      "Cenchrus ciliaris",
+      "Cynodon dytahilo"
+    ],
+    "start_nodes": [
+      "Caracal",
+      "Grant's Gazelle",
+      "Kori Bustard"
+    ],
+    "paths": [
+      {
+        "final_node": "Q818737",
+        "final_name": "Barbary striped grass mouse",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q818737",
+            "name": "Barbary striped grass mouse",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 3.995990118710324e-05
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q1038150",
+        "final_name": "Kangaroo Grass",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.9998807907104492
+          },
+          {
+            "node": "Q1038150",
+            "name": "Kangaroo Grass",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.11686941236257553
+          },
+          {
+            "node": "Q1038150",
+            "name": "Kangaroo Grass",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9999996423721313
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q1038150",
+        "final_name": "Kangaroo Grass",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q323847",
+            "name": "Rock Hyrax",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 5.920826879446395e-05
+          },
+          {
+            "node": "Q1038150",
+            "name": "Kangaroo Grass",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.9994864463806152
+          },
+          {
+            "node": "Q1038150",
+            "name": "Kangaroo Grass",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9999996423721313
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q2157164",
+        "final_name": "Single-stemmed Wild Grape",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q323847",
+            "name": "Rock Hyrax",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 5.920826879446395e-05
+          },
+          {
+            "node": "Q2157164",
+            "name": "Single-stemmed Wild Grape",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.0003795436932705343
+          },
+          {
+            "node": "Q2157164",
+            "name": "Single-stemmed Wild Grape",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9999573230743408
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q1941482",
+        "final_name": "Wild Grapes",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q323847",
+            "name": "Rock Hyrax",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 5.920826879446395e-05
+          },
+          {
+            "node": "Q1941482",
+            "name": "Wild Grapes",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 3.921326424460858e-05
+          },
+          {
+            "node": "Q1941482",
+            "name": "Wild Grapes",
+            "action": "STOP",
+            "relation": null,
+            "prob": 0.9959774613380432
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.9998807907104492
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5578048825263977
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5885746479034424
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.9998807907104492
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5578048825263977
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2238149642944336
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.9998807907104492
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5578048825263977
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.16402456164360046
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.9998807907104492
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.13720329105854034
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.4869799315929413
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.9998807907104492
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.13720329105854034
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20335453748703003
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.9998807907104492
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.13720329105854034
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19780604541301727
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q2703335",
+        "final_name": "Themeda",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "eats",
+            "prob": 0.9998807907104492
+          },
+          {
+            "node": "Q1038150",
+            "name": "Kangaroo Grass",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.11686941236257553
+          },
+          {
+            "node": "Q2703335",
+            "name": "Themeda",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 3.15827890062792e-07
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q2703335",
+        "final_name": "Themeda",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q323847",
+            "name": "Rock Hyrax",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 5.920826879446395e-05
+          },
+          {
+            "node": "Q1038150",
+            "name": "Kangaroo Grass",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.9994864463806152
+          },
+          {
+            "node": "Q2703335",
+            "name": "Themeda",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 3.15827890062792e-07
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q2046407",
+        "final_name": "Cissus",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q323847",
+            "name": "Rock Hyrax",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 5.920826879446395e-05
+          },
+          {
+            "node": "Q2157164",
+            "name": "Single-stemmed Wild Grape",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.0003795436932705343
+          },
+          {
+            "node": "Q2046407",
+            "name": "Cissus",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 4.2651208786992356e-05
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q26220",
+        "final_name": "Vitaceae",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q30847",
+            "name": "Caracal",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q323847",
+            "name": "Rock Hyrax",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 5.920826879446395e-05
+          },
+          {
+            "node": "Q1941482",
+            "name": "Wild Grapes",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 3.921326424460858e-05
+          },
+          {
+            "node": "Q26220",
+            "name": "Vitaceae",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.004022558219730854
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5703883171081543
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5703883171081543
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5703883171081543
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2460506707429886
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5578048825263977
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2460506707429886
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.13720329105854034
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q1038150",
+        "final_name": "Kangaroo Grass",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2460506707429886
+          },
+          {
+            "node": "Q1038150",
+            "name": "Kangaroo Grass",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.11686941236257553
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.17963220179080963
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.4869799315929413
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.17963220179080963
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20335453748703003
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.17963220179080963
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19780604541301727
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5885746479034424
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5885746479034424
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5885746479034424
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2238149642944336
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5578048825263977
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2238149642944336
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.13720329105854034
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q1038150",
+        "final_name": "Kangaroo Grass",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2238149642944336
+          },
+          {
+            "node": "Q1038150",
+            "name": "Kangaroo Grass",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.11686941236257553
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.16402456164360046
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.4869799315929413
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.16402456164360046
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20335453748703003
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.16402456164360046
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19780604541301727
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.4869799315929413
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5703883171081543
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.4869799315929413
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2460506707429886
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.4869799315929413
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.17963220179080963
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q735222",
+        "final_name": "Grant's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20335453748703003
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.5885746479034424
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q271705",
+        "final_name": "Thomson's Gazelle",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20335453748703003
+          },
+          {
+            "node": "Q271705",
+            "name": "Thomson's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.2238149642944336
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20335453748703003
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.16402456164360046
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q245305",
+        "final_name": "Plains Zebra",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19780604541301727
+          },
+          {
+            "node": "Q245305",
+            "name": "Plains Zebra",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.45025408267974854
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q328809",
+        "final_name": "Common Wildebeest",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19780604541301727
+          },
+          {
+            "node": "Q328809",
+            "name": "Common Wildebeest",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.3124237656593323
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q25647543",
+        "final_name": "Common Eland",
+        "hops": 3,
+        "path": [
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          },
+          {
+            "node": "Q735222",
+            "name": "Grant's Gazelle",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.19780604541301727
+          },
+          {
+            "node": "Q25647543",
+            "name": "Common Eland",
+            "action": "FOLLOW",
+            "relation": "migrates_with",
+            "prob": 0.20478935539722443
+          }
+        ],
+        "stopped_by": "max_hops",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q686287",
+        "final_name": "Kori Bustard",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q686287",
+            "name": "Kori Bustard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q686287",
+            "name": "Kori Bustard",
+            "action": "STOP",
+            "relation": null,
+            "prob": 1.0
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q2194882",
+        "final_name": "Ardeotis",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q686287",
+            "name": "Kori Bustard",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q2194882",
+            "name": "Ardeotis",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 1.3234098261705185e-09
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      }
+    ],
+    "gpt_response": "Cynodon dytahilo",
+    "result": "HIT",
+    "hit": true
+  },
+  {
+    "question": "What is the parent taxon of the plants that bush hyraxes prey on?",
+    "hop_type": "multi",
+    "answer_nodes": [
+      "Vitaceae",
+      "Themeda",
+      "Solanum",
+      "Balanites",
+      "Croton",
+      "Commelina",
+      "Ficus subg. Urostigma",
+      "Emilia",
+      "Pupalia",
+      "Pavonia",
+      "Senna",
+      "Capparis",
+      "Cissus",
+      "Hoslundia",
+      "Aloe",
+      "Vachellia",
+      "Heliotropium"
+    ],
+    "start_nodes": [
+      "Tree hyrax",
+      "Bush Hyrax",
+      "Hyracoidea"
+    ],
+    "paths": [
+      {
+        "final_node": "Q1761200",
+        "final_name": "Tree hyrax",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q1761200",
+            "name": "Tree hyrax",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q2157164",
+        "final_name": "Single-stemmed Wild Grape",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q186942",
+            "name": "Bush Hyrax",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q2157164",
+            "name": "Single-stemmed Wild Grape",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.9520021677017212
+          },
+          {
+            "node": "Q2157164",
+            "name": "Single-stemmed Wild Grape",
+            "action": "STOP",
+            "relation": null,
+            "prob": 1.896441830240292e-07
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q1941482",
+        "final_name": "Wild Grapes",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q186942",
+            "name": "Bush Hyrax",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q1941482",
+            "name": "Wild Grapes",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.03732464089989662
+          },
+          {
+            "node": "Q1941482",
+            "name": "Wild Grapes",
+            "action": "STOP",
+            "relation": null,
+            "prob": 9.667330935769769e-09
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q1038150",
+        "final_name": "Kangaroo Grass",
+        "hops": 1,
+        "path": [
+          {
+            "node": "Q186942",
+            "name": "Bush Hyrax",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q1038150",
+            "name": "Kangaroo Grass",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.0052786157466471195
+          },
+          {
+            "node": "Q1038150",
+            "name": "Kangaroo Grass",
+            "action": "STOP",
+            "relation": null,
+            "prob": 7.604893426105264e-07
+          }
+        ],
+        "stopped_by": "agent",
+        "is_answer": false
+      },
+      {
+        "final_node": "Q2046407",
+        "final_name": "Cissus",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q186942",
+            "name": "Bush Hyrax",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q2157164",
+            "name": "Single-stemmed Wild Grape",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.9520021677017212
+          },
+          {
+            "node": "Q2046407",
+            "name": "Cissus",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.9999997615814209
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q26220",
+        "final_name": "Vitaceae",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q186942",
+            "name": "Bush Hyrax",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q1941482",
+            "name": "Wild Grapes",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.03732464089989662
+          },
+          {
+            "node": "Q26220",
+            "name": "Vitaceae",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 1.0
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q2703335",
+        "final_name": "Themeda",
+        "hops": 2,
+        "path": [
+          {
+            "node": "Q186942",
+            "name": "Bush Hyrax",
+            "action": "START",
+            "relation": null
+          },
+          {
+            "node": "Q1038150",
+            "name": "Kangaroo Grass",
+            "action": "FOLLOW",
+            "relation": "preys_on",
+            "prob": 0.0052786157466471195
+          },
+          {
+            "node": "Q2703335",
+            "name": "Themeda",
+            "action": "FOLLOW",
+            "relation": "parent_taxon",
+            "prob": 0.9999992847442627
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": true
+      },
+      {
+        "final_node": "Q53099",
+        "final_name": "Hyracoidea",
+        "hops": 0,
+        "path": [
+          {
+            "node": "Q53099",
+            "name": "Hyracoidea",
+            "action": "START",
+            "relation": null
+          }
+        ],
+        "stopped_by": "dead_end",
+        "is_answer": false
+      }
+    ],
+    "gpt_response": "Vitaceae",
+    "result": "HIT",
+    "hit": true
+  }
+]
