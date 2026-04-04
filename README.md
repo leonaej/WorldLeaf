@@ -13,9 +13,9 @@ WorldLeaf constructs a structured knowledge graph of the Serengeti/African Savan
 
 The project has three stages:
 
-- Stage 1: Dataset Construction (complete)
-- Stage 2: TransE Embedding Pre-training (upcoming)
-- Stage 3: RL Traversal Agent Training and Evaluation (upcoming)
+- Stage 1: Dataset Construction
+- Stage 2: RAG Evaluation
+- Stage 3: RL Traversal Agent Training and Evaluation 
 
 ---
 
