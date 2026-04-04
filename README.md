@@ -5,6 +5,8 @@ Hand-curated African Savanna knowledge graph with 1,423 species nodes and 1,541 
 Author: Leona E Joseph  
 Email: leonaej4000@gmail.com  
 Affiliation: Rochester Institute of Technology
+
+
 ---
 
 
