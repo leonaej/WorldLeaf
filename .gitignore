@@ -23,6 +23,8 @@ baseline/node_embeddings_meta.json
 baseline/node_embeddings.npy
 baseline/node_texts.json
 
+Project_Flow.png
+
 
 proposed_solution/edge_embeddings/edge_embeddings.json
 proposed_solution/edge_embeddings/trained_model.pt
